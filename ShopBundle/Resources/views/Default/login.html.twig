@@ -1,0 +1,59 @@
+{% extends "GoldenCageShopBundle::template.html.twig" %}
+
+{% block body %}
+<!--MAKE COPY OF THIS FILE AND USE IT AS IT IS-->
+<!-- FOLLOW ASSETS path -->
+<!-- Don't hand craft path -->
+
+	<div class="login-div container">
+			<div class="span4">
+				<h3 class="block-title">Account Login</h3>
+				<div class="ruler">
+				</div>
+				<form method="post" action="#" class="form-login">
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">Email<span class="required">*</span></label>
+						<input type="text" id="inputEmail" placeholder="Email">
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputPassword">Password<span class="required">*</span></label>
+						<input type="password" id="inputPassword" placeholder="Password">
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputPassword">&nbsp;</label><input type="checkbox"> Remember
+					</div>
+					<input type="submit" value="Login" class="btn btn-large btn-danger"/>
+				</form>
+			</div>
+			<div class="span4">
+				<h3 class="block-title">Create account</h3>
+				<div class="ruler">
+				</div>
+				<form method="post" action="#" class="form-login">
+					{% block login %}
+                    <h4>Please enter your email to create an account.</h4>
+					<p>
+					</p>
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">Email<span class="required">*</span></label>
+						<input type="text" id="inputEmail" placeholder="Email">
+					</div>
+					<input type="submit" value="Create an account" class="btn btn-large btn-danger"/>
+			{% endblock %}
+                </form>
+			</div>
+			<div class="span4">
+				<h3 class="block-title">Login with Facebook</h3>
+				<div class="ruler">
+				</div>
+				<div class="facebook-div">
+					<a href="#" class="login-facebook">
+					<i class="icon-facebook large icon-align-left"></i> Login with facebook </a>
+					<p>
+						We won't post anything without your permission.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+{% endblock %}

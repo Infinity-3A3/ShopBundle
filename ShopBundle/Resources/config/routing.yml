@@ -1,0 +1,3 @@
+golden_shop_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: GoldenShopBundle:Default:index }

@@ -1,0 +1,7 @@
+parameters:
+#    golden_shop.example.class: Golden\ShopBundle\Example
+
+services:
+#    golden_shop.example:
+#        class: %golden_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
